@@ -1,0 +1,47 @@
+/* UserProfile.css */
+
+.user-profile-container {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 100px;
+  text-align: left; /* Left align the content */
+  max-width: 800px; /* Limit maximum width for better readability */
+  margin: 100px auto 0; /* Center the container horizontally and maintain margin from the top */
+  
+}
+
+.space{
+  margin-right: '0px';
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-username {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  margin-bottom: 10px;
+}
