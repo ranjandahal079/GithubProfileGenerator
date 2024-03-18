@@ -1,6 +1,7 @@
 /* UserProfile.css */
 
 .user-profile-container {
+  background-color: #f0f0f0; /* Set background color to gray */
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 20px;
@@ -8,11 +9,36 @@
   text-align: left; /* Left align the content */
   max-width: 800px; /* Limit maximum width for better readability */
   margin: 100px auto 0; /* Center the container horizontally and maintain margin from the top */
-  
 }
 
-.space{
-  margin-right: '0px';
+.stats {
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.info_bio {
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.left-info,
+.right-info {
+  flex: 20;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 50px;
+  background-color: white; /* Set background color to white */
+}
+
+.right-info {
+  text-align: center; /* Center bio content */
 }
 
 .profile-header {
@@ -20,7 +46,6 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  
 }
 
 .profile-image {
@@ -42,6 +67,7 @@
   margin-bottom: 10px;
 }
 
-.profile-details p {
-  margin-bottom: 10px;
+.bold-heading {
+  font-weight: bold; /* Make headings bold */
+  text-align: center;
 }
