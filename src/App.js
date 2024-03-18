@@ -9,7 +9,9 @@ const App = () => {
   const [error, setError] = useState(null);
   const [showInputForm, setShowInputForm] = useState(true);
   const [showHeading, setShowHeading] = useState(true);
+  const [showParagraph, setShowParagraph] = useState(true); // State to control visibility of the paragraph
   const [hireClicked, setHireClicked] = useState(false); // State to track if "Hire Me" button is clicked
+  
 
   const fetchUserData = async (username) => {
     try {
@@ -19,6 +21,7 @@ const App = () => {
         setUser(data);
         setShowInputForm(false);
         setShowHeading(false);
+        setShowParagraph(false);
       } else {
         throw new Error('User not found');
       }
@@ -36,6 +39,7 @@ const App = () => {
   return (
     <div>
       {showHeading && <h1>GitHub Profile</h1>}
+      {showParagraph && <p>Generate your GitHub Profile</p>} {/* Conditionally render the paragraph */}
       <InputForm onSubmit={fetchUserData} visible={showInputForm} />
       {error ? (
         <NotFound />
