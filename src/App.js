@@ -30,6 +30,7 @@ const App = () => {
   const handleHireClick = () => {
     // Action to be performed when the "Hire" button is clicked
     console.log("Hire button clicked!");
+    console.log("Hire button is clicked!");
     setHireClicked(true); // Update state when the button is clicked
   };
 
