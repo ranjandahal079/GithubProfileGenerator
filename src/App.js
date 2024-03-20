@@ -23,7 +23,6 @@ const App = () => {
         setShowHeading(false);
         setShowParagraph(false);
       } else {
-        /*add;*/
         throw new Error("User not found");
       }
     } catch (error) {
@@ -41,7 +40,6 @@ const App = () => {
     <div>
       {showHeading && <h1>GitHub Profile</h1>}
       {showParagraph && <p>Generate your GitHub Profile</p>}{" "}
-      {/* Conditionally render the paragraph */}
       <InputForm onSubmit={fetchUserData} visible={showInputForm} />
       {error ? (
         <NotFound />
@@ -52,7 +50,6 @@ const App = () => {
             Hire Me
           </button>
           {hireClicked && <p>Hire Me button clicked!</p>}{" "}
-          {/* Display message when the button is clicked */}
         </React.Fragment>
       ) : null}
     </div>
