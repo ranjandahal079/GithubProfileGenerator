@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
+import './App.css';
+import NotFound from './components/NotFound';
 import InputForm from './components/InputForm';
 import UserProfile from './components/UserProfile';
-import NotFound from './components/NotFound';
-import './App.css';
+
 
 const App = () => {
   const [user, setUser] = useState(null);
